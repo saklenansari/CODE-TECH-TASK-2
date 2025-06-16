@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Learning Platform</h1>
+  </header>
+
+  <section class="video-section">
+    <h2>Lesson 1: Introduction</h2>
+    <video controls width="640">
+      <source src="video/sample-lesson.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="quiz-section">
+    <h2>Quick Quiz</h2>
+    <form id="quizForm">
+      <p>What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="a"> Hyperlinks and Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="b"> Hyper Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="quizResult"></p>
+  </section>
+
+  <section class="progress-section">
+    <h2>Your Progress</h2>
+    <progress id="courseProgress" value="1" max="5"></progress>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
